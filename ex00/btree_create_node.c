@@ -6,12 +6,12 @@
 /*   By: jegoh <jegoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 07:22:00 by jegoh             #+#    #+#             */
-/*   Updated: 2024/10/12 07:26:13 by jegoh            ###   ########.fr       */
+/*   Updated: 2024/10/12 07:35:30 by jegoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "ft_btree.h"
+#include <stdlib.h>
 
 t_btree *btree_create_node(void *item)
 {
