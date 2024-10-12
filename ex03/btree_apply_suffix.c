@@ -6,7 +6,7 @@
 /*   By: jegoh <jegoh@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 07:23:25 by jegoh             #+#    #+#             */
-/*   Updated: 2024/10/12 07:36:24 by jegoh            ###   ########.fr       */
+/*   Updated: 2024/10/12 07:58:19 by jegoh            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,9 @@ void btree_apply_suffix(t_btree *root, void (*applyf)(void *))
     if (root == NULL)
         return;
 
-    // Traverse left subtree
     btree_apply_suffix(root->left, applyf);
 
-    // Traverse right subtree
     btree_apply_suffix(root->right, applyf);
 
-    // Apply function to current node
     applyf(root->item);
 }
